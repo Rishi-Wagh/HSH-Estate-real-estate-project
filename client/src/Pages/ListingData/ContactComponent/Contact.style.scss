@@ -1,0 +1,37 @@
+.contact-container{
+      width: 85%;
+      margin-left: 8%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+     
+      p{
+        width: 100%;
+        padding: 1px 50px;
+        .contact-s1{
+            font-size: larger;
+            font-weight: bold;
+          }
+      }
+
+      .contact-msg{
+        width: 80%;
+        padding: 10px 5px;
+        border-radius: 5px;
+        resize: none;
+      }
+
+      .conatct-link{
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid aqua;
+        color: white;
+        font-weight: 600;
+        padding: 10px 550px;
+        border-radius: 30px;
+        font-size: 1.3rem; 
+        background: rgb(0,93,81);
+        background: linear-gradient(90deg, rgba(0,93,81,1) 0%, rgba(43,183,174,0.9248949579831933) 100%);
+      }
+}

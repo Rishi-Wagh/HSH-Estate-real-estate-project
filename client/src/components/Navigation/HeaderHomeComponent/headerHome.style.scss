@@ -1,0 +1,59 @@
+.home-nav-container{
+    width: 100%;
+    gap: 20px;
+    height: 70PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    position: fixed;
+    z-index: 100;
+    animation: myAnim 0.5s ease 0s 1 normal forwards;
+
+    .home-nav-logo{
+        p{
+            font-size: larger;
+            span{
+                font-size: 30px;
+                font-family:'Yellowtail', cursive;
+                color: aqua;
+            }
+        }
+    }
+
+    .home-nav-links{
+        display: flex;
+        gap: 20px;
+
+        .nav-home-link{
+            all: unset;
+            font-size: large;
+            cursor: pointer;
+            position: relative;
+
+            
+        .header-property-type{
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            margin-right: 20px;
+            margin-top: -30px;
+            padding-top: 27px;
+          }
+        }
+    }
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+

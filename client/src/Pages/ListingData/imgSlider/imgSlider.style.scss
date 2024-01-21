@@ -1,0 +1,90 @@
+.img-slider-container{
+     width: 100%;
+     height: 100%;
+     position: relative;
+
+     .img-slider{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow: hidden;
+        
+
+        .img-slider-img{
+            width: 100%;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 2px solid rgb(150, 150, 150);
+            border-radius: 20px;
+            object-fit: cover;
+            transition: translate 350ms ease-in-out;
+        }
+     }
+    
+     .slider-left-btn{
+         all: unset;
+         left: 0;
+         position: absolute;
+         display: block;
+         top: 0;
+         bottom: 0;
+         padding: 1rem;
+         transition: background-color 100ms ease-in-out;
+         border-top-left-radius: 16px;
+         border-bottom-left-radius: 16px;
+         cursor: pointer;
+         stroke: white;
+         fill: black;
+        }
+         
+
+     .slider-right-btn{
+        all: unset;
+        right: 0;
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        padding: 1rem;
+        transition: background-color 100ms ease-in-out;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        cursor: pointer;
+        stroke: white;
+        fill: black;
+     }
+
+     .slider-left-btn:hover{
+        background-color: rgb(0, 0, 0, 0.2);
+     }
+
+     .slider-right-btn:hover{
+        background-color: rgb(0, 0, 0, 0.2); 
+     }
+
+     .img-slider-dots{
+        position: absolute;
+        bottom: .5rem;
+        left: 50%;
+        translate: -50%;
+        display: flex;
+        gap: .25rem;
+
+        .img-slider-dot-btn{
+            all: unset;
+            cursor: pointer;
+            transition: scale 100ms ease-in-out;
+        }
+
+        .img-slider-dot-btn:hover{
+           scale: 1.3;
+        }
+
+        .img-slider-dot-btn > *{
+            stroke: white;
+            fill: black;
+            height: 0.9rem;
+            width: 0.9rem;
+        }
+     }
+}

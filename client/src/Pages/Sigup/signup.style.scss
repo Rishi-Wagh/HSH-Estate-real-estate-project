@@ -1,0 +1,75 @@
+
+.signup-container{
+     height: 92vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     background-color: rgb(246, 236, 228);
+
+     .err{  
+        color: red; 
+        font-size: medium;
+        font-family: sans-serif;
+     }
+
+     .tag{
+        margin-top: 40px;
+        font-size: 50px;
+        font-weight: 500;
+        color: rgb(63, 62, 62);
+     }
+
+    .form-box{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .input{
+            width: 500px;
+            height: 40px;
+            margin: 20px;
+            border: none;
+            border-bottom: 1px solid rgb(29, 28, 28);
+            background: transparent;
+        }
+    }
+    .btn{
+        margin-top: 25px;
+        margin-bottom: 5px;
+        height: 40px;
+        width: 100%;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        font-size: 20px;
+        background-color: rgb(17, 108, 113);
+    }
+
+    .btn:hover{
+        opacity: 90%;
+        cursor: pointer;
+    }
+
+    .btn-g{
+        margin-top: 5px;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        font-size: 20px;
+        background-color: rgb(207, 74, 48);
+    }
+
+    .btn-g:hover{
+        opacity: 90%;
+        cursor: pointer;
+    }
+
+    span{
+        font-weight: 700;
+        color: rgb(47, 127, 127);
+        font-size: 20px;
+    }
+    
+}

@@ -1,0 +1,150 @@
+.prop-detail-contaner{
+
+    .prop-title{
+       background-color: rgb(0, 0, 0);
+       border-radius: 5px;
+       color: white;
+
+       h1{
+        padding: 8px;
+        margin-left: 15px;
+       }
+    }
+
+    .prop-type-and-price{
+        display: flex;
+
+        .prop-type{
+            border-right: 1px solid gray;
+            display: flex;
+            flex: 1;
+
+            .sell-icon{
+                margin-left: 5px;
+                font-size: 6rem;
+                color: green;
+            }
+
+            .rent-icon{
+                margin-left: 5px;
+                font-size: 6rem;
+                color: red;
+            }
+
+            span{
+                padding: 17px 17px;
+                font-size: 2.5rem;
+                font-family: sans;
+                font-weight: 600;
+            }
+        }
+
+        .prop-regular-price{
+            border-right: 1px solid gray;
+            display: flex;
+            flex: 2;
+
+            .regular-tag{
+                font-family: sans;
+                font-weight: 600;
+                font-size: 2rem;  
+                padding: 27px 20px;
+            }
+
+            .regular-num{
+                font-weight: 400;
+                font-size: 1.8rem;  
+                padding: 25px 5px;
+                color: rgb(107, 104, 104);
+            }
+        }
+
+        .prop-discount-price{
+            display: flex;
+            flex: 2;
+
+            .discount-tag{
+                font-family: sans;
+                font-weight: 600;
+                font-size: 2rem;  
+                padding: 27px 20px;    
+            }
+
+            .discount-num{
+                font-weight: 400;
+                font-size: 1.8rem;  
+                color: rgb(25, 152, 25);
+                padding: 25px 5px;
+            }
+
+            .discount-icon{
+                margin-top: 10px;
+                font-size: 4rem;
+                color: red;
+            }
+        }
+    }
+
+    .prop-description{
+        margin: 20px 0;
+        background-color: rgb(236, 236, 236);
+        padding: 2px 40px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+        
+    }
+
+    .prop-address{
+       margin-left: 3%;
+       color: rgb(25, 111, 111);
+        span{
+            margin-left: 5px;
+            border-bottom: 1px solid rgb(213, 213, 213);
+        }
+    }
+
+    .prop-amenities{
+        flex-wrap: wrap;
+        display: flex;
+        width: 80%;
+        margin: 1.5% 11%;
+
+        .prop-amenities-card{
+            height: 100px;
+            display: flex;
+            width: 49%;
+            background-color: rgb(254, 239, 239);
+            margin: 5px;
+            border-radius: 7px;
+
+            .aminities-left{
+              height: 100%;
+              flex: 1;
+
+               .aminity-icon{
+                color: rgb(108, 108, 108);
+                font-size: 50px;
+                padding: 20px 40px;
+               }
+    
+            }
+
+            .aminites-right{
+              display: flex;
+              flex-direction: column;
+              padding: 20px 50px;
+              flex: 3;
+              height: 100%;
+
+              .aminity-status-result{
+                font-size: 27px;
+                font-weight: 500;
+              }
+
+              .aminity-status{
+                color: gray;
+              }
+            }
+        }
+    }
+}

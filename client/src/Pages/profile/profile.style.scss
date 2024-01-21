@@ -1,0 +1,94 @@
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .profile-box{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: 1000px;
+        margin: 20px 50px;
+        border: 1px solid gray;
+        border-radius: 5px;
+
+        .profile-header{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+
+            .dark{
+                display: flex;
+                background-color: black;
+                height: 70%;
+                position: relative;
+                color: white;
+
+                 .sign-out{
+                    color: white;
+                    position: absolute;
+                    margin-left: 95%;  
+                    cursor: pointer;  
+                 }
+
+                 .sign-out:hover{
+                    color: rgb(205, 205, 205);
+                 }
+
+                 img{
+                    width: 100px;
+                    height: 100px;
+                    margin-left: 30px;
+                    margin-top: 140px;
+                    position: absolute;
+                    border-radius: 5px;
+                    object-fit: cover;
+                    border: 5px solid rgb(243, 239, 239);
+                    
+                 }
+
+                 span{
+                    align-self: flex-end;
+                    color: white;
+                    font-size: 30px;
+                    margin-left: 150px;
+                    font-family: sans-serif;
+                    font-weight: 500;
+                    padding: 5px;
+                 }
+            }
+
+            .gray{
+                display: flex;
+                align-items: end;
+                justify-content: end;
+                height: 30%;
+                background-color: rgb(218, 215, 215);
+
+                .listing{
+                    margin-left: 40px;
+                    margin-right: auto;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                    border: 1px solid gray;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+                }
+
+                .profile-btn{
+                    
+                    border: none;
+                    margin: 5px;
+                    font-size: 20px;
+                    cursor: pointer;
+                    font-family: sans;
+                    background-color: transparent;                   
+                }
+                
+            }
+
+            
+        }
+       
+    }
+}

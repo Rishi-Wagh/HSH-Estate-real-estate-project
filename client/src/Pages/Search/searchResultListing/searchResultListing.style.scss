@@ -1,0 +1,53 @@
+.SearchResultListing-card{
+    width: 280px;
+    height: fit-content;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+    img{
+      width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      transition: scale 0.5s;
+    }
+
+    img:hover{
+        scale: 106%;
+    }
+
+    h3{
+        padding: 5px;
+        padding-bottom: 8px;
+        margin-top: -4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: black;
+        color: white;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    h6{
+        color: rgb(7, 125, 125);
+        margin-top: -13px;
+        padding-left: 12px;
+        padding-bottom: 5px;
+    }
+
+    h4{
+       margin-top: -25px;
+       padding-left: 15px;
+       margin-bottom: 5px;
+       color: rgb(103, 6, 6);
+    }
+}
+
+.SearchResultListing-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
+}

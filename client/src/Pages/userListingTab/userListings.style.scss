@@ -1,0 +1,89 @@
+.userListing-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        color: rgb(85, 85, 85);
+    }
+
+    .userListings-container{
+        width: 80%;
+ 
+        .userListing-card{
+            margin: 30px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgba(243, 243, 241, 0.688);
+            padding: 10px;
+            border-radius: 5px;
+
+            .userListing-img{
+                img{
+                    height: 120px;
+                    width: 140px;
+                    object-fit: cover;
+                    border-radius: 5px;
+                    border: 5px solid rgb(164, 163, 163);
+                 }
+            }
+            .userListing-info{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                height: 120px;
+                width: 65%;
+                
+                span{
+                    padding: 5px;
+                }
+
+                .title{
+                  font-family: sans-serif;  
+                  font-size: 25px;
+                  border-bottom: 1px solid rgb(211, 208, 208);
+                }
+
+                .type{
+                  font-size: larger;
+                  font-weight: 500;
+                }
+
+                .buttons{
+                   display: flex;
+                   justify-content: center;
+
+                   .btn-1{
+                     margin-right: 10px;
+                     border: 1px solid rgb(13, 131, 115);
+                     padding: 10px 25px;
+                     border-top-left-radius: 50px;
+                     border-bottom-left-radius: 50px;
+                     cursor: pointer;
+                     color: white;
+                     background-color: rgb(31, 192, 192);
+                   }
+
+                   .btn-2{
+                    border: 1px solid rgb(125, 20, 20);
+                     padding: 10px 20px;
+                     border-top-right-radius: 50px;
+                     border-bottom-right-radius: 50px;
+                     cursor: pointer;
+                     color: white;
+                     background-color: rgb(246, 15, 80)                   }
+                }
+            }
+        }
+        .pag-btn{  
+            margin-top: -20px;
+            margin-left: 50px;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid rgb(8, 117, 62);
+            background-color: rgb(12, 198, 105);
+        }
+    }
+}

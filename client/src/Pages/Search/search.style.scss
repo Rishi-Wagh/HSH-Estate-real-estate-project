@@ -1,0 +1,109 @@
+.search-container{
+    display: flex;
+    height: 100vh;
+
+    .left-search{
+       width: 30%;
+       height: 100vh;
+       border: 1px solid gray;
+       padding: 20px 20px;
+       background-image: url("https://www.archpaper.com/wp-content/uploads/2019/02/WA_Tower-House-3-645x969.jpg");
+       .search-head{
+        font-weight: 500;
+        font-size: larger;
+       }
+
+        .search-field{
+            display: flex;
+            flex-direction: row;
+            
+            .search-input{
+              width: 20rem;
+              height: 1.5rem;
+              border: none;
+              border-radius: 3px;
+              margin-left: 10px;
+              margin-bottom: 10px;
+            }
+        }
+       
+        .search-type{
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .search-type-options{
+              margin: 0px 7px;
+
+              .type-check{
+               height: 13px;
+               width: 17px;  
+              }
+                
+            }
+
+            select{
+                margin: 0px 10px;
+            }
+        }
+
+        .search-button-container{
+            margin-left: 10%;
+            padding-top: 10px;
+
+            .search-button{
+                width: 90%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                font-size: large;
+                font-weight: bold;
+                border: 1px solid rgb(29, 92, 92);
+                background-color: rgb(40, 121, 121);
+                cursor: pointer;
+                transition: background-color 0.5;
+            }
+
+            .search-button:hover{
+               background-color: rgb(29, 92, 92);
+            }
+        }
+    }
+
+    .right-search{
+        width: 70%;
+        height: 105vh;
+        margin-top: -15px;
+        margin-top: 0px; 
+        background-color: rgb(244, 244, 244);   
+        
+        .listing-result-head{
+           width: 100%;
+           padding-left: 17px;
+           padding-top: 5px;
+           height: fit-content; 
+            h1{
+                color: rgb(6, 88, 88);
+            }
+         }
+
+        .listing-result-body{
+            width: 100%;
+            padding-left: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+           
+    }
+
+    .search-page-button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
