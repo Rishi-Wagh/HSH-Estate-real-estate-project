@@ -66,7 +66,7 @@ const Signin = () => {
               <button className='btn' disabled={loading}>{loading ? 'loading...':'submit'}</button>
              <Oauth />
           </form>
-          Dont have an account?<Link to={'/Sign-up'}><span>Sign-up</span></Link>
+          Dont have an account?<Link to={'/hsh/Sign-up'}><span>Sign-up</span></Link>
         </div>
     </div>
   )
