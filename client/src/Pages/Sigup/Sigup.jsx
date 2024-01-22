@@ -68,7 +68,7 @@ const Sigup = () => {
               <button className='btn' disabled={loading}>{ loading ? 'loading..': 'submit' }</button>
               <Oauth  />
           </form>
-          Already a user?<Link to={'/Sign-in'}><span>log-in</span></Link>
+          Already a user?<Link to={'/hsh/Sign-in'}><span>log-in</span></Link>
         </div>
     </div>
   )
