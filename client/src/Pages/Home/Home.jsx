@@ -12,13 +12,21 @@ import { useSelector } from 'react-redux';
 import Dropdownlist from './drop-down-list';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger'; 
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 
 export const Home = () => {
   const navigate = useNavigate();
   const { currentUser } = useSelector((state)=> state.user);
   const [isHovered, setIsHovered] = useState(false);
   const [counterOn , setCounterOn] = useState(false);
+  const [open, setOpen] = React.useState(false);
 
+  
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -26,7 +34,18 @@ export const Home = () => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
- 
+  
+  const handleClickOpen = () => {
+    if(!currentUser){
+      navigate('/hsh/Sign-Up');
+    }else{
+      setOpen(true);
+    }  
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <div className='home-page'>
@@ -207,11 +226,28 @@ export const Home = () => {
                    <span className='tweet-sign'>Sign Up</span>
                    <span className='tweet-bottom'>For Free</span>
                    <span className='tweet-para'>Click below to register with us.</span>
-                   <button onClick={()=>{navigate('/hsh/Sign-Up')}}>REGISTER</button>
+                   <button onClick={handleClickOpen}>REGISTER</button>
                 </div>
             </div>
          </div>
       </div>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">
+          {"You are already a registered user."}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Go Back.</Button>
+        </DialogActions>
+      </Dialog>
    </div> 
   )
 }
